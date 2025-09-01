@@ -1,5 +1,5 @@
 {
-  "name": "Flutter Web + Android Build",
+  "name": "Flutter Web + Android Build (Fixed)",
   "build": {
     "dockerfile": "Dockerfile",
     "context": "."
@@ -33,5 +33,5 @@
     "ANDROID_HOME": "/opt/android-sdk",
     "JAVA_HOME": "/usr/lib/jvm/java-17-openjdk-amd64"
   },
-  "postCreateCommand": "bash .devcontainer/scripts/install_flutter.sh && bash .devcontainer/scripts/install_android.sh && flutter --version && flutter precache --web && flutter doctor -v"
+  "postCreateCommand": "sudo bash .devcontainer/scripts/install_flutter.sh && sudo bash .devcontainer/scripts/install_android.sh && flutter --version && flutter precache --web && flutter doctor -v"
 }
