@@ -1,0 +1,47 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Flutter: Run Web (5173)",
+      "type": "shell",
+      "command": "flutter run -d web-server --web-hostname=0.0.0.0 --web-port=5173",
+      "problemMatcher": []
+    },
+    {
+      "label": "Flutter: Build APK (release)",
+      "type": "shell",
+      "command": "flutter build apk --release",
+      "problemMatcher": []
+    },
+    {
+      "label": "Flutter: Build AppBundle (release)",
+      "type": "shell",
+      "command": "flutter build appbundle --release",
+      "problemMatcher": []
+    },
+    {
+      "label": "Flutter: Clean",
+      "type": "shell",
+      "command": "flutter clean",
+      "problemMatcher": []
+    },
+    {
+      "label": "Flutter: Analyze",
+      "type": "shell",
+      "command": "flutter analyze",
+      "problemMatcher": []
+    },
+    {
+      "label": "Flutter: Test",
+      "type": "shell",
+      "command": "flutter test",
+      "problemMatcher": []
+    },
+    {
+      "label": "Android: Accept Licenses",
+      "type": "shell",
+      "command": "yes | sdkmanager --licenses",
+      "problemMatcher": []
+    }
+  ]
+}
